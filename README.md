@@ -1,4 +1,3 @@
-```
 # Git-Checker
 
 **Developer:** CayberMods | **Version:** non-versi
@@ -177,5 +176,3 @@ Category: Pentesting · Ethical Hacking · Security Research
 Version: non-versi
 
 If you find this tool useful, consider giving it a ⭐ on GitHub.
-
-```
