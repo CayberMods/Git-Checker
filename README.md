@@ -34,9 +34,9 @@ pip install -r requirements.txt
 
 Requirements
 
-· Python 3.8+
-· requests
-· rich
+- · Python 3.8+
+- · requests
+- · rich
 
 Install manually if needed:
 
@@ -56,13 +56,14 @@ python git_checker.py -f <targets.txt>
 Arguments
 
 Flag Description
+```
 -s, --single Scan a single target domain
 -f, --file Scan multiple targets from a file (one per line)
 -t, --threads Number of concurrent threads (default: 10)
 -o, --output Save scan report to a JSON file
 --no-banner Hide the banner
 -h, --help Show help message
-
+```
 Examples
 
 Scan a single domain:
@@ -167,8 +168,6 @@ This project is provided as-is for educational and authorized security testing p
 Unauthorized access to computer systems is illegal and punishable by law. The developer assumes no liability for misuse.
 
 ---
-
-Credits
 
 - Category: Pentesting · Ethical Hacking · Security Research
 - Version: non-versi
