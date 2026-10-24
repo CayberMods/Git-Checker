@@ -1,7 +1,5 @@
 # Git-Checker
 
-**Developer:** CayberMods | **Version:** non-versi
-
 A fast and clean CLI tool to detect exposed `.git` directories on web servers, assess security risk, dump `.git` files, and search for leaked credentials. Built with [Rich](https://github.com/Textualize/rich) for a modern terminal UI.
 
 > **Disclaimer:** This tool is intended for **authorized security testing, ethical hacking, and security research only**. Only use it against systems you own or have explicit written permission to test. The author is not responsible for any misuse or damage caused by this tool.
@@ -120,39 +118,40 @@ What It Detects
 
 Exposed Files
 
-· .git/HEAD, .git/config, .git/index, .git/COMMIT_EDITMSG
-· .git/logs/HEAD, .git/logs/refs/heads/*
-· .git/packed-refs, .git/info/refs, .git/refs/heads/*
-· .git/objects/info/packs, .git/description, .git/ORIG_HEAD, .git/FETCH_HEAD
+- · .git/HEAD, .git/config, .git/index, .git/COMMIT_EDITMSG
+- · .git/logs/HEAD, .git/logs/refs/heads/*
+- · .git/packed-refs, .git/info/refs, .git/refs/heads/*
+- · .git/objects/info/packs, .git/description, .git/ORIG_HEAD, 
+- .git/FETCH_HEAD
 
 Credential Patterns
 
-· Passwords, usernames
-· API keys, secrets, tokens
-· AWS keys, GitHub tokens, Slack tokens, Google API keys, Stripe keys
-· Private keys (RSA, DSA, EC, OpenSSH, PGP)
-· JWT tokens
-· Database/connection URLs (MySQL, PostgreSQL, MongoDB, Redis, FTP, SMTP)
-· SSH remotes and email addresses
+- · Passwords, usernames
+- · API keys, secrets, tokens
+- · AWS keys, GitHub tokens, Slack tokens, Google API keys, Stripe keys
+- · Private keys (RSA, DSA, EC, OpenSSH, PGP)
+- · JWT tokens
+- · Database/connection URLs (MySQL, PostgreSQL, MongoDB, Redis, FTP, SMTP)
+- · SSH remotes and email addresses
 
 Risk Scoring
 
-Level Score Description
-LOW 0–19 Minimal exposure
-MEDIUM 20–39 Backup/log/db files found
-HIGH 40–69 Sensitive files exposed
-CRITICAL 70–100 Credentials, keys, or config files exposed
+- Level Score Description
+-LOW 0–19 Minimal exposure
+- MEDIUM 20–39 Backup/log/db files found
+- HIGH 40–69 Sensitive files exposed
+- CRITICAL 70–100 Credentials, keys, or config files exposed
 
 ---
 
 Output Example
 
 ```
-╭─────────── Git Exposure Scan Results ───────────╮
-│ Domain          │ Protocol │ Git       │ Risk    │
-├─────────────────┼──────────┼───────────┼─────────┤
-│ http://site.com │ HTTP     │ FOUND     │ HIGH    │
-╰─────────────────┴──────────┴───────────┴─────────╯
+╭─────────── Git Exposure Scan Results ────────────────╮
+│ Domain           │ Protocol  │ Git          │ Risk       │
+├───────────────┼──────────┼───────────┼───────────┤
+│ http://site.com  │ HTTP      │ FOUND        │ HIGH       │
+╰───────────────┴──────────┴───────────┴───────────╯
 ```
 
 ---
@@ -161,9 +160,9 @@ Legal Notice
 
 This project is provided as-is for educational and authorized security testing purposes only. By using this tool, you agree to:
 
-· Only test systems you own or have explicit permission to test
-· Follow all applicable laws in your jurisdiction
-· Not use this tool for unauthorized access, data theft, or any illegal activity
+- · Only test systems you own or have explicit permission to test
+- · Follow all applicable laws in your jurisdiction
+- · Not use this tool for unauthorized access, data theft, or any illegal activity
 
 Unauthorized access to computer systems is illegal and punishable by law. The developer assumes no liability for misuse.
 
@@ -171,8 +170,7 @@ Unauthorized access to computer systems is illegal and punishable by law. The de
 
 Credits
 
-Developer: CayberMods
-Category: Pentesting · Ethical Hacking · Security Research
-Version: non-versi
+- Category: Pentesting · Ethical Hacking · Security Research
+- Version: non-versi
 
 If you find this tool useful, consider giving it a ⭐ on GitHub.
